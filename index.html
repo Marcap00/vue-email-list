@@ -17,10 +17,20 @@
     <!-- Vue 3 -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <div id="app">
-        <h1> {{ message }} </h1>
+        <div class="container">
+            <div class="card mt-5">
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item" v-for="email in emails"> {{ email }}</li>
+                </ol>
+            </div>
+        </div>
     </div>
 
 
+    <!-- Axios Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+        integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
 </body>
